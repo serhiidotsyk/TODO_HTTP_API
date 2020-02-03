@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TODO_HTTP_API.WebApi", "TODO_HTTP_API.WebApi\TODO_HTTP_API.WebApi.csproj", "{C17D6013-4C50-4C13-931F-2AB578B5B4A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TODO_HTTP_API.DataAcceess", "TODO_HTTP_API.DataAcceess\TODO_HTTP_API.DataAcceess.csproj", "{BDD53F2C-EB1A-475B-AAD9-DD123732F865}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TODO_HTTP_API.BusinessLogic", "TODO_HTTP_API.BusinessLogic\TODO_HTTP_API.BusinessLogic.csproj", "{D7E6AC61-80FC-4D91-A935-3CAD8831971D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{C17D6013-4C50-4C13-931F-2AB578B5B4A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C17D6013-4C50-4C13-931F-2AB578B5B4A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C17D6013-4C50-4C13-931F-2AB578B5B4A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDD53F2C-EB1A-475B-AAD9-DD123732F865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD53F2C-EB1A-475B-AAD9-DD123732F865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD53F2C-EB1A-475B-AAD9-DD123732F865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD53F2C-EB1A-475B-AAD9-DD123732F865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7E6AC61-80FC-4D91-A935-3CAD8831971D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7E6AC61-80FC-4D91-A935-3CAD8831971D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7E6AC61-80FC-4D91-A935-3CAD8831971D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7E6AC61-80FC-4D91-A935-3CAD8831971D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

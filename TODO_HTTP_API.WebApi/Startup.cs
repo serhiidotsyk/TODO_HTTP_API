@@ -6,10 +6,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using TODO_HTTP_API.DataAcceess;
 
 namespace TODO_HTTP_API.WebApi
 {
@@ -26,6 +28,15 @@ namespace TODO_HTTP_API.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            //EntityFramework
+            services.AddEntityFrameworkSqlServer()
+                    .AddDbContext<ApplicationContext>(opt =>
+                    {
+                        opt.UseSqlServer(Configuration.GetConnectionString("LocalSql"),
+                                      m => m.MigrationsAssembly("TODO_HTTP_API.WebApi"));
+                    });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
