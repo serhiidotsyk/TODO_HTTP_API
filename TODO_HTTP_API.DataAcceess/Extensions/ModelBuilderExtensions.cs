@@ -25,7 +25,7 @@ namespace TODO_HTTP_API.DataAcceess.Extensions
                     Name = "All Tasks",
                     ReturnCompleted = false,
                     UserId = 1,
-                    ToDoListType = ToDoListType.smart,                    
+                    ToDoListType = ToDoListType.smart,
                 },
                 new ToDoList
                 {
@@ -34,6 +34,7 @@ namespace TODO_HTTP_API.DataAcceess.Extensions
                     ReturnCompleted = false,
                     UserId = 1,
                     ToDoListType = ToDoListType.smart,
+                    
                 },
                 new ToDoList
                 {
@@ -57,7 +58,7 @@ namespace TODO_HTTP_API.DataAcceess.Extensions
                     Id = 1,
                     Title = "Earn 1 million dollars",
                     Description = "Do it anyway",
-                    DateCreated = DateTime.Now,
+                    DateCreated = DateTime.Parse("10/22/2015 12:10:15 PM"),
                     Importance = Importance.high,
                     IsCompleted = false,
                     IsDeleted = false,

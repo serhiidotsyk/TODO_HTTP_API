@@ -21,7 +21,8 @@ namespace TODO_HTTP_API.DataAcceess
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //Configure ListId and TaskId as the composite key
-            modelBuilder.Entity<ListTask>().HasKey(lt => new { lt.ListId, lt.TaskId });
+            modelBuilder.Entity<ListTask>()
+                .HasKey(lt => new { lt.ListId, lt.TaskId });
 
             //Seed Data
             modelBuilder.Seed();
