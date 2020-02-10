@@ -11,8 +11,8 @@ Dependencies
  
  * System.Linq.Dynamic.Core -> for for dynamic use of OrderBy(to provide sorting)
  
- * Swashbuckle.AspNetCore.Swagger--------------
-   Swashbuckle.AspNetCore.SwaggerGen----------- for documanting API
-   Swashbuckle.AspNetCore.SwaggerUI------------
+ * Swashbuckle.AspNetCore.Swagger-------------- for documanting API
+ * Swashbuckle.AspNetCore.SwaggerGen----------- for documanting API
+ * Swashbuckle.AspNetCore.SwaggerUI------------ for documanting API
    
  * Microsoft.EntityFrameworkCore -> for database data access
